@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pierre Feuille Ciseaux</title>
+</head>
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<h2>Scoreboard</h2>
+<div id="scoreboard">
+    <p><input class="scoreInput" id="playerScore" type="number" min="0" max="3" value="0" readonly></p>
+    <p><input class="scoreInput" id="botScore" type="number" min="0" max="3" value="0" readonly></p>
+</div>
+<section>
+    <p>PLAYER</p>
+    <p>BOT</p>
+</section>
+<div id="playground">
+    <img id="pictureChoicePlayer" src="image/scissors.png" alt="don't work">
+    <img id="pictureChoiceBot" src="image/rock.png" alt="don't work">
+    </div>
+<div id="manette">
+    <button class="key" id="rock">Rock</button>
+    <button class="key" id="paper">Paper</button>
+    <button class="key" id="scissors">Scissors</button>
+</div>
+<p id="felicitation">
+    Make Your Move!
+</p>
+<footer>
+    Made by Riad
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

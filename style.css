@@ -1,0 +1,108 @@
+*, ::after, ::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: darkcyan;
+}
+
+h1
+{
+    text-align: center;
+    margin: 20px auto 70px;
+    font-size: 3.1em;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 2.3em;
+}
+
+#scoreboard
+{
+    border: 2px solid;
+    width: 75%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+#scoreboard p
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.scoreInput
+{
+    text-align: end;
+    font-size: 1.8em;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: rgb(204, 204, 93) ;
+    line-height: 200px;
+}
+
+section
+{
+    
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+    font-size: 1.3em;
+}
+
+#playground
+{
+    /* border: 2px solid floralwhite; */
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 40px auto 50px;
+}
+
+#manette
+{
+    /* border: 2px solid; */
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key
+{
+    width: 150px;
+    height: 70px;
+    font-size: 1.8em;
+    background-color: plum;
+    font-weight: bold
+}
+
+#felicitation
+{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 2.1em;
+}
+
+footer
+{
+    text-align: center;
+    margin: 50px 5px;
+}
+
+
+
+
+
