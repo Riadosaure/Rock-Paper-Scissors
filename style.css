@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *, ::after, ::before
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 body
 {
-    background-color: darkcyan;
+    background-color: "#fafafa";
 }
 
 h1
@@ -14,6 +16,8 @@ h1
     text-align: center;
     margin: 20px auto 70px;
     font-size: 3.1em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 h2
@@ -24,31 +28,48 @@ h2
 
 #scoreboard
 {
-    border: 2px solid;
-    width: 75%;
+    background-color: lightgray;
+    width: 50%;
     height: 100px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    border-radius: 10px;
 }
 
-#scoreboard p
+#scoreboard span
 {
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 40px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+    -o-appearance: none;
+    margin:0
 }
 
 .scoreInput
 {
-    text-align: end;
-    font-size: 1.8em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
     height: 60px;
     width: 60px;
-    border-radius: 50%;
-    border: 2px solid;
-    background-color: rgb(204, 204, 93) ;
+    border: none;
     line-height: 200px;
+    background-color: transparent;
+    color: #0072e2;
 }
 
 section
@@ -71,6 +92,12 @@ section
     margin: 40px auto 50px;
 }
 
+img
+{
+    width: 200px;
+    height: 200px;
+}
+
 #manette
 {
     /* border: 2px solid; */
@@ -85,8 +112,17 @@ section
     width: 150px;
     height: 70px;
     font-size: 1.8em;
-    background-color: plum;
-    font-weight: bold
+    background-color: #0072e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.key:hover
+{
+    background-color: blue;
+    transition: .5s;
 }
 
 #felicitation
