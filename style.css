@@ -8,7 +8,7 @@
 }
 body
 {
-    background-color: "#fafafa";
+    background-color: #fafafa;
 }
 
 h1
@@ -41,6 +41,22 @@ h2
 #scoreboard span
 {
     font-size: 40px;
+    animation-name: clignotant;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clignotant
+{
+    0%{ 
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 input[type=number] {
@@ -74,7 +90,6 @@ input::-o-outer-spin-button {
 
 section
 {
-    
     display: flex;
     width: 75%;
     margin: auto;
@@ -84,7 +99,6 @@ section
 
 #playground
 {
-    /* border: 2px solid floralwhite; */
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -100,7 +114,6 @@ img
 
 #manette
 {
-    /* border: 2px solid; */
     margin: auto;
     width: 75%;
     display: flex;

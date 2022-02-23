@@ -2,6 +2,7 @@
 const btn_rock = document.getElementById('rock');
 const btn_paper = document.getElementById('paper');
 const btn_scissors = document.getElementById('scissors');
+const bodyEl = document.querySelector('body');
 
 const pictureChoicePlayerEl = document.getElementById('pictureChoicePlayer');
 const pictureChoiceBotEl = document.getElementById('pictureChoiceBot');
@@ -31,15 +32,15 @@ function compareChoices(choicePlayer, choiceBot)
         scoreBot++;
         botScoreEl.value = scoreBot;
         felicitationEl.innerText = 'Ouch! try again...';
-        felicitationEl.style.color = 'red';
-        setTimeout(()=>felicitationEl.style.color = 'black', 700);       
+        bodyEl.style.backgroundColor = 'red';
+        setTimeout(()=>bodyEl.style.backgroundColor = 'white', 100);       
     }
     else if((choicePlayer === 'paper' && choiceBot === 'rock') || (choicePlayer === 'rock' && choiceBot === 'scissors') || (choicePlayer === 'scissors' && choiceBot == 'paper'))
     {
         scorePlayer++;
         playerScoreEl.value = scorePlayer;
         felicitationEl.innerText = 'Good choice! One more time...';
-        felicitationEl.style.color = 'green';
+        felicitationEl.style.color = 'lime';
         setTimeout(()=>felicitationEl.style.color = 'black', 700);
     }
     else
@@ -54,7 +55,7 @@ function finishTheGame(scorePlayer, scoreBot)
     if(scorePlayer === 3)
     {
         felicitationEl.innerText = 'Royal Victory for Player';
-        felicitationEl.style.color = 'green';
+        felicitationEl.style.color = 'lime';
         // window.setTimeout( ()=>{
         //     window.document.href="index.html";
         // }, 5000);
