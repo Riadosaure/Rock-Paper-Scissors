@@ -58,7 +58,7 @@ function finishTheGame(scorePlayer, scoreBot)
         felicitationEl.style.color = 'lime';
         // window.setTimeout( ()=>{
         //     window.document.href="index.html";
-        // }, 5000);
+        // }, 5000);        
         setTimeout(reload, 5000);
     }
     else if (scoreBot === 3)
